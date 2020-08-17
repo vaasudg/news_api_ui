@@ -1,7 +1,7 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router-dom'
-import './autoSuggestion.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import ConditionalComponent from '../../conditionalComponent/conditionalComponent';
+import './autoSuggestion.css';
 
 const AutoSuggestion = ({
     searchNews,
@@ -49,7 +49,7 @@ const AutoSuggestion = ({
                                         }
                                     }
                                 }}>
-                                <span style={{ backgroundColor: generateColor() }}>{article.title[0]}</span>
+                                <span style={{ backgroundColor: generateColor() }}>{article.title && article.title[0]}</span>
                                 {article.title}
                             </Link>
                         </li>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Home from './pages/home/home';
 import routes from '../Routes/routes';
+import Home from './pages/home/home';
 
 const IndexComponent = () => {
     return (

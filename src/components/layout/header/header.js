@@ -1,9 +1,9 @@
-import React, { useState, useContext } from 'react';
-import { NewsContext } from '../../../context/Store';
-import './header.css';
-import { ACTIVE_AUTO_COMPLETE, SEARCH_NEWS } from '../../../context/actions/newsAction';
-import { searchNews } from '../../../services/asyncServices';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { ACTIVE_AUTO_COMPLETE, SEARCH_NEWS } from '../../../context/actions/newsAction';
+import { NewsContext } from '../../../context/Store';
+import { searchNews } from '../../../services/asyncServices';
+import './header.css';
 
 const Header = () => {
     const [searchValue, setSearchValue] = useState('');
@@ -17,6 +17,7 @@ const Header = () => {
     const onSearchChange = e => {
         const { value } = e.target;
         setSearchValue(value);
+        // dispatch({ type: 'LOADING', loading: true });
         dispatch({ type: ACTIVE_AUTO_COMPLETE, isAutoSugesstion: !!value.length });
         searchNews(`api`, dispatch, SEARCH_NEWS, { q: searchValue, pageSize: 100 });
     }

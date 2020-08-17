@@ -9,9 +9,11 @@ import './home.css';
 
 const Home = ({ children }) => {
     const { state: { isAutoSugesstion, searchNews, loading }, dispatch } = useContext(NewsContext);
+
     const onExit = _ => {
         dispatch({ type: ACTIVE_AUTO_COMPLETE, isAutoSugesstion: false });
     }
+    
     return (
         <div className=''>
             <Header />

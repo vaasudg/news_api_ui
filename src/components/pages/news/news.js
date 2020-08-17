@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { GET_ERROR, GET_LATEST_NEWS } from '../../../context/actions/newsAction';
 import { NewsContext } from '../../../context/Store';
-import NewsContainer from '../../newsContainer/newsContainer';
 import { getLatestNewsService } from '../../../services/asyncServices';
-import './news.css';
 import ConditionalComponent from '../../conditionalComponent/conditionalComponent';
-import { GET_LATEST_NEWS, GET_ERROR } from '../../../context/actions/newsAction';
+import NewsContainer from '../../newsContainer/newsContainer';
+import './news.css';
 
 
 const News = () => {
@@ -18,7 +18,7 @@ const News = () => {
             // return;
         }
         getLatestNewsService(`api?pageSize=${pageSize}&page=${page}`, dispatch, GET_LATEST_NEWS);
-    }, [dispatch, pageSize, page]);
+    }, [dispatch, pageSize, page, errorMessage]);
 
     const onLoadeMore = _ => {
         alert('This feature in-progress, it may be available in the future');
