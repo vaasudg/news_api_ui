@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'News Cycle', sans-serif;
+
+  /* font-family: 'News Cycle' -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+.loading {
+  background-color: rgb(95 95 95 / 95%);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 5rem;
+  top: 0;
+  color: #f10d77;
+  line-height: 6;
+  text-shadow: 1px 0 0 #84365a;
+}
+
+.error__message {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding: 50px 0;
+  color: #FFF;
+}
+
+::selection {
+  color: #f10d77;
+  background-color: #84365a;
+}
+
+::-webkit-scrollbar {
+  scrollbar-width: none;
+  width: 5px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 300px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #ad15b7;
+}
