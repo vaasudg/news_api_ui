@@ -16,6 +16,7 @@ You need to clone the `https://github.com/vaasudg/news_api_mw.git` and run in or
 ### What not included
  - Testing files
  - CSS Code refactering might not as per the standard(will be updated in the future version)
+ - Color consistency
  - Tablet view(only available in small screen and default big screen)
  - 
 

@@ -62,3 +62,26 @@ body {
   border-radius: 10px;
   background-color: #ad15b7;
 }
+
+.wrong__text {
+  color: tomato;
+  text-align: center;
+  font-size: larger;
+  padding: 0 0 40px;
+  /* text-decoration: wavy;
+  text-decoration-line: underline; */
+  letter-spacing: 2px;
+}
+
+.wrong__text>a {
+  color: #150931;
+  font-weight: bold;
+  transition: all .5s;
+  text-decoration: underline;
+  letter-spacing: 0;
+}
+
+.wrong__text>a:hover {
+  color: tomato;
+  /* text-decoration-color: tomato; */
+}

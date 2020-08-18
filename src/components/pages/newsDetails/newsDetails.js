@@ -3,13 +3,19 @@ import { Link, useHistory } from 'react-router-dom';
 import './newsDetails.css';
 
 const NewsDetails = () => {
-    const { location: { state: { news: {
+    const { location: { state }, go } = useHistory();
+    if (!state) {
+        // go('/');
+        return <div className='wrong__text'>Somthing wrong with this page, Please <Link to='/'>GO HOME</Link></div>;
+    }
+
+    const { news: {
         urlToImage,
         title,
         description,
         author,
         date,
-        url } } } } = useHistory();
+        url } } = state;
 
     return (
         <div className='news__page_container'>
