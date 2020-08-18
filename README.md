@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # Daily News - UI
-This app allow you to read the UK news and alsow allowing to search the world latest news
+This app allow you to read the UK news and also allowing to search the world latest news
 
 # Getting Started
 You need to clone the `https://github.com/vaasudg/news_api_mw.git` and run in order to execute this app, Pleas follow the instructions from https://github.com/vaasudg/news_api_mw
@@ -10,7 +10,7 @@ You need to clone the `https://github.com/vaasudg/news_api_mw.git` and run in or
 # Installing
  - Clone this repository by `git clone https://github.com/vaasudg/news_api_ui.git`
  - Go to the cloned folder via your command line and type `$ npm install`
- - `$ npm srart` 
+ - `$ npm start` 
  - Run http://localhost:3000
 
 ### What not included
